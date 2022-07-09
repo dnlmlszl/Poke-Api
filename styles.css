@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    background-image: Url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3630ff67-8105-44c7-aa55-86bbcff6eeb4/d76237h-a164687b-ad08-43d1-889a-31dc1970818a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM2MzBmZjY3LTgxMDUtNDRjNy1hYTU1LTg2YmJjZmY2ZWViNFwvZDc2MjM3aC1hMTY0Njg3Yi1hZDA4LTQzZDEtODg5YS0zMWRjMTk3MDgxOGEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jmaSE-PZcsdEoOyx-ypeSBH6ioCXzuV91nrEEXAbW5A');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;    
+}
+
+.pokemon {
+    border: 8px solid rgb(68, 64, 54);
+    min-width: 350px;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1em;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .28);
+    margin-bottom: 1em;
+}
+
+.name {
+    text-transform: capitalize;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: rgb(82, 71, 50);
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    color: rgb(82, 71, 50);
+}
+
+button {
+    border-radius: 4px;
+    background-color: #5ca1e1;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 0.64em 1.6em;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+  }
